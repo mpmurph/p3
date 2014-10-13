@@ -1,0 +1,64 @@
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-bottom: 50px;
+	color: #494047;
+	background-color: #153167;
+}
+
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table {
+	width: 65%;
+}
+
+td {
+	text-align:center;
+	padding: 10px;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
+	min-width: 700px;
+	max-width: 1083px;
+	background-color: white;
+	min-height: 1050px;
+}
+
+.custombutton {
+	width:175px;
+	height:50px;
+	font-size: 24px;
+}
+
+#sidebarimage {
+	float:left;
+	width: 31%;
+	/**width: 350px;
+	height: 1000px;**/
+}
+
+#headerimage {
+	width: 69%;
+	/**width: 683px;
+	height: 308px;**/
+}
+
+#welcometext {
+	font-size: 18px;
+	margin-right: 25px;
+	text-align: justify;
+}
+
+#welcome {
+	display: block;
+	padding: 20px;
+	max-width: 65%;
+	float: right;
+}
+
