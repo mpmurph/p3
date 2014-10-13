@@ -16,14 +16,16 @@
 
 	<div id="wrapper">
 
-		<header>
-			<img src="images/bffstickman.jpg" alt="A BFF Stickman" id="sidebarimage"/>
-			<img src="images/bffheader.jpg" alt="A Developer's BFF" id="headerimage"/>
-		</header>
+		@yield("header")
 
 		@yield("content")
 
 		@yield("form")
+
+		@yield("footer")
+
+		<div class="clearboth">
+		</div>
 
 	</div>
 
