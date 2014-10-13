@@ -11,7 +11,22 @@
 |
 */
 
+//Route::get('/', function()
+//{
+//	return View::make('hello');
+//});
+
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('welcome');
+});
+
+Route::get('/fillertext', function()
+{
+	return "fillertext";
+});
+
+Route::get('/randomusers', function()
+{
+	return "randomusers";
 });
