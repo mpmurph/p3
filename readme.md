@@ -19,4 +19,6 @@ Links to the four sites where I scraped the word lists:
 
 Image sources:
 
-....* [Snoopy picture](http://shopfurrytales.blogspot.com/2011_03_01_archive.html)
+....* [Snoopy picture that inspired the BFF stickman:](http://shopfurrytales.blogspot.com/2011_03_01_archive.html)
+
+....* [Image that inspired the BFF doggie:](http://www.shutterstock.com/pic-94264543/stock-photo-sitting-dog-cartoon-raster-version.html)
