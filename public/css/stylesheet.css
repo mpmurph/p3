@@ -12,12 +12,14 @@ img {
 }
 
 table {
-	width: 65%;
+	width: 67%;
+	float: right;
 }
 
 td {
 	text-align:center;
 	padding: 10px;
+	font-size: 18px;
 }
 
 #wrapper {
@@ -27,19 +29,13 @@ td {
 	min-width: 700px;
 	max-width: 1083px;
 	background-color: white;
-	min-height: 1050px;
-}
-
-.custombutton {
-	width:175px;
-	height:50px;
-	font-size: 24px;
+	min-height: 100%;
 }
 
 #sidebarimage {
 	float:left;
 	width: 31%;
-	/**width: 350px;
+	/** width: 350px; 31%
 	height: 1000px;**/
 }
 
@@ -47,6 +43,12 @@ td {
 	width: 69%;
 	/**width: 683px;
 	height: 308px;**/
+}
+
+#footerimage {
+	float: right;
+	padding-top: 25px;
+	width: 20%;
 }
 
 #welcometext {
@@ -58,7 +60,17 @@ td {
 #welcome {
 	display: block;
 	padding: 20px;
-	max-width: 65%;
+	width: 65%;
 	float: right;
+}
+
+.custombutton {
+	width: 175px;
+	height: 50px;
+	font-size: 24px;
+}
+
+.clearboth {
+	clear: both;
 }
 
