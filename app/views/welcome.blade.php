@@ -1,5 +1,14 @@
 @extends("_master")
 
+@section("header")
+
+	<header>
+		<img src="images/bffstickman.jpg" alt="A BFF Stickman" id="sidebarimage"/>
+		<img src="images/bffheader.jpg" alt="A Developer's BFF" id="headerimage"/>
+	</header>
+
+@stop
+
 @section("content")
 
 	<br/>
@@ -15,9 +24,7 @@
 	<br/>
 	<br/>
 	<br/>
-	<br/>
-	<br/>
-	<br/>
+
 
 @stop
 
@@ -33,5 +40,13 @@
 			<td>{{ link_to("fillertext", "Filler Text", array("class" => "btn btn-success custombutton")) }}</td>
 			<td>{{ link_to("randomusers", "Random Users", array("class" => "btn btn-success custombutton")) }}</td>
 	</table>
+
+@stop
+
+@section("footer")
+
+	<footer>
+		<img src="images/bffdoggie.jpg" alt="A Dog BFF" id="footerimage"/>
+	</footer>
 
 @stop
