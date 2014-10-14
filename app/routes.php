@@ -23,10 +23,10 @@ Route::get('/', function()
 
 Route::get('/fillertext', function()
 {
-	return "fillertext";
+	return View::make('fillertext');
 });
 
 Route::get('/randomusers', function()
 {
-	return "randomusers";
+	return View::make('randomusers');
 });
