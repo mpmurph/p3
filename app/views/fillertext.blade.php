@@ -22,7 +22,7 @@
 
 	<div id="fillerform">
 
-		<form action="fillertext" method="GET">
+		{{ Form::open(array("url" => "fillertext", "method" => "GET")) }}
 
 			{{ Form::label("count", "How many paragraphs would you like returned?"); }}
 			{{ Form::text("count", Input::get("count")); }}
@@ -51,7 +51,7 @@
 			<br>
 			<br>
 
-		</form>
+		{{ Form::close() }}
 
 	</div>
 

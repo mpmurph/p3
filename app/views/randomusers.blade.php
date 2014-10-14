@@ -22,7 +22,7 @@
 
 	<div id="fillerform">
 
-		<form action="randomusers" method="GET">
+		{{ Form::open(array("url" => "randomusers", "method" => "GET")) }}
 
 			{{ Form::label("count", "How many users would you like returned?"); }}
 			{{ Form::text("count", Input::get("count")); }}
@@ -51,7 +51,7 @@
 			<br>
 			<br>
 
-		</form>
+		{{ Form::close() }}
 
 	</div>
 
