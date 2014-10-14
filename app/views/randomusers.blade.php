@@ -24,32 +24,29 @@
 
 		<form action="randomusers" method="GET">
 
-			<label for="count">How many users would you like returned?</label>
-			<input type="text" id="count" name="count" <?php if (array_key_exists ("count", $_GET)) { echo "value=\"$_GET[count]\"";}?> />
-
-			<br>
-			<br>
-			
-			<input type="checkbox" name="birthday" value="birthday" 
-			<?php if (array_key_exists ("birthday", $_GET)) { echo "checked";}?> />
-			<label for="birthday">Include Birthdays</label> 
-
-			<br>
-
-			<input type="checkbox" name="zip" value="zip" 
-			<?php if (array_key_exists ("zip", $_GET)) { echo "checked";}?> />
-			<label for="zip">Include Zip Codes</label> 
-
-			<br>
-
-			<input type="checkbox" name="profile" value="profile" 
-			<?php if (array_key_exists ("profile", $_GET)) { echo "checked";}?> />
-			<label for="profile">Include User Profiles</label> 
+			{{ Form::label("count", "How many users would you like returned?"); }}
+			{{ Form::text("count", Input::get("count")); }}
 
 			<br>
 			<br>
 
-			<input type="submit" class="btn btn-success btn-lg" name="submit" value="SUBMIT"/>
+			{{ Form::checkbox("birthday", "birthday", Input::get("birthday")); }}
+			{{ Form::label("birthday", "Include Birthdays"); }}
+
+			<br>
+
+			{{ Form::checkbox("zip", "zip", Input::get("zip")); }}
+			{{ Form::label("zip", "Include Zip Codes"); }}
+
+			<br>
+
+			{{ Form::checkbox("profile", "profile", Input::get("profile")); }}
+			{{ Form::label("profile", "Include User Profiles"); }}
+
+			<br>
+			<br>
+
+			{{ Form::submit("SUBMIT", array("class" => "btn btn-success btn-lg")); }}
 
 			<br>
 			<br>
