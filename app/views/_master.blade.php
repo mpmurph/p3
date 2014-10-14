@@ -27,6 +27,8 @@
 		<div class="clearboth">
 		</div>
 
+		@yield("output")
+
 	</div>
 
 </body>
