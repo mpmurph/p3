@@ -25,22 +25,23 @@
 		{{ Form::open(array("url" => "randomusers", "method" => "GET")) }}
 
 			{{ Form::label("count", "How many users would you like returned?"); }}
+			<br>
 			{{ Form::text("count", Input::get("count")); }}
 
 			<br>
 			<br>
 
-			{{ Form::checkbox("birthday", "birthday", Input::get("birthday")); }}
+			{{ Form::checkbox("birthday", "birthday", Input::get("birthday"), array("id"=>"birthday")); }}
 			{{ Form::label("birthday", "Include Birthdays"); }}
 
 			<br>
 
-			{{ Form::checkbox("zip", "zip", Input::get("zip")); }}
+			{{ Form::checkbox("zip", "zip", Input::get("zip"), array("id"=>"zip")); }}
 			{{ Form::label("zip", "Include Zip Codes"); }}
 
 			<br>
 
-			{{ Form::checkbox("profile", "profile", Input::get("profile")); }}
+			{{ Form::checkbox("profile", "profile", Input::get("profile"), array("id"=>"profile")); }}
 			{{ Form::label("profile", "Include User Profiles"); }}
 
 			<br>

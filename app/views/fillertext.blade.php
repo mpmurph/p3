@@ -25,22 +25,23 @@
 		{{ Form::open(array("url" => "fillertext", "method" => "GET")) }}
 
 			{{ Form::label("count", "How many paragraphs would you like returned?"); }}
+			<br>
 			{{ Form::text("count", Input::get("count")); }}
 
 			<br>
 			<br>
 			
-			{{ Form::radio("paraglength", "short", Input::get("paraglength")=="short"); }}
+			{{ Form::radio("paraglength", "short", Input::get("paraglength")=="short", array("id"=>"short")); }}
 			{{ Form::label("short", "Short"); }}
 
 			<br>
 
-			{{ Form::radio("paraglength", "medium", Input::get("paraglength")=="medium"); }}
-			{{ Form::label("medium", "Medium"); }}
+			{{ Form::radio("paraglength", "medium", Input::get("paraglength")=="medium", array("id"=>"medium")); }}
+			{{ Form::label("medium", "Medium"); }} 
 
 			<br>
 
-			{{ Form::radio("paraglength", "long", Input::get("paraglength")=="long"); }}
+			{{ Form::radio("paraglength", "long", Input::get("paraglength")=="long", array("id"=>"long")); }}
 			{{ Form::label("long", "Long"); }}
 
 			<br>
