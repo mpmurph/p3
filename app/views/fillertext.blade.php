@@ -24,32 +24,29 @@
 
 		<form action="fillertext" method="GET">
 
-			<label for="count">How many paragraphs would you like returned?</label>
-			<input type="text" id="count" name="count" <?php if (array_key_exists ("count", $_GET)) { echo "value=\"$_GET[count]\"";}?> />
+			{{ Form::label("count", "How many paragraphs would you like returned?"); }}
+			{{ Form::text("count", Input::get("count")); }}
 
 			<br>
 			<br>
 			
-			<input type="radio" name="paraglength" value="short" 
-			<?php if (array_key_exists ("paraglength", $_GET) && $_GET["paraglength"]=="short") { echo "checked";}?> />
-			<label for="short">Short</label> 
+			{{ Form::radio("paraglength", "short", Input::get("paraglength")=="short"); }}
+			{{ Form::label("short", "Short"); }}
 
 			<br>
 
-			<input type="radio" name="paraglength" value="medium" 
-			<?php if (array_key_exists ("paraglength", $_GET) && $_GET["paraglength"]=="medium") { echo "checked";}?> />
-			<label for="medium">Medium</label> 
+			{{ Form::radio("paraglength", "medium", Input::get("paraglength")=="medium"); }}
+			{{ Form::label("medium", "Medium"); }}
 
 			<br>
 
-			<input type="radio" name="paraglength" value="long" 
-			<?php if (array_key_exists ("paraglength", $_GET) && $_GET["paraglength"]=="long") { echo "checked";}?> />
-			<label for="long">Long</label> 
+			{{ Form::radio("paraglength", "long", Input::get("paraglength")=="long"); }}
+			{{ Form::label("long", "Long"); }}
 
 			<br>
 			<br>
 
-			<input type="submit" class="btn btn-success btn-lg" name="submit" value="SUBMIT"/>
+			{{ Form::submit("SUBMIT", array("class" => "btn btn-success btn-lg")); }}
 
 			<br>
 			<br>
