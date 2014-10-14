@@ -1,8 +1,28 @@
-body {
-	font-family: Tahoma, Geneva, sans-serif;
-	margin-bottom: 50px;
-	color: #494047;
-	background-color: #153167;
+/** sitewide CSS **/
+/** sitewide CSS **/
+/** sitewide CSS **/
+
+.custombutton {
+	width: 175px;
+	height: 50px;
+	font-size: 24px;
+}
+
+.clearboth {
+	clear: both;
+}
+
+.directions {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	width: 85%;
+}
+
+.directionstext {
+	font-size: 18px;
+	text-align: center;
 }
 
 img {
@@ -22,23 +42,6 @@ td {
 	font-size: 18px;
 }
 
-#wrapper {
-	margin-left: auto;
-	margin-right: auto;
-	padding: 25px;
-	min-width: 700px;
-	max-width: 1083px;
-	background-color: white;
-	min-height: 100%;
-}
-
-#sidebarimage {
-	float:left;
-	width: 31%;
-	/** width: 350px; 31%
-	height: 1000px;**/
-}
-
 #headerimage {
 	width: 69%;
 	/**width: 683px;
@@ -51,10 +54,38 @@ td {
 	width: 20%;
 }
 
-#welcometext {
-	font-size: 18px;
-	margin-right: 25px;
-	text-align: justify;
+
+/** _master CSS **/
+/** _master CSS **/
+/** _master CSS **/
+
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-bottom: 50px;
+	color: #494047;
+	background-color: #153167;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
+	min-width: 700px;
+	max-width: 1083px;
+	background-color: white;
+	min-height: 100%;
+}
+
+
+/** welcome CSS **/
+/** welcome CSS **/
+/** welcome CSS **/
+
+#sidebarimage {
+	float:left;
+	width: 31%;
+	/** width: 350px; 31%
+	height: 1000px;**/
 }
 
 #welcome {
@@ -64,13 +95,42 @@ td {
 	float: right;
 }
 
-.custombutton {
-	width: 175px;
-	height: 50px;
-	font-size: 24px;
+#welcometext {
+	font-size: 18px;
+	margin-right: 25px;
+	text-align: justify;
 }
 
-.clearboth {
-	clear: both;
+
+/** randomusers CSS **/
+/** randomusers CSS **/
+/** randomusers CSS **/
+
+
+
+
+
+
+/** fillertext CSS **/
+/** fillertext CSS **/
+/** fillertext CSS **/
+
+#fillerform {
+	font-size: 20px;
+	display: block;
+	width: 70%;
+	padding: 30px;
+	float: left;
 }
 
+#outputarea {
+	padding: 10px;
+	text-align: center;
+	word-wrap: normal;
+}
+
+#actualoutput {
+	color: #a0001c;
+    font-weight: bold;
+    font-size: 24px;
+}
