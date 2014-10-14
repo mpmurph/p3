@@ -13,10 +13,6 @@ I will demonstrate my P3 in section on Friday.
 None
 
 ##Outside code and source material
-Links to the four sites where I scraped the word lists:
-
-....* [Nonsense words](http://phrontistery.info/nonsense.html)
-
 Image sources:
 
 ....* [Snoopy picture that inspired the BFF stickman:](http://shopfurrytales.blogspot.com/2011_03_01_archive.html)
