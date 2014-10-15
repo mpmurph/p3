@@ -54,6 +54,13 @@ td {
 	width: 20%;
 }
 
+#warning {
+	color: #a0001c;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
 
 /** _master CSS **/
 /** _master CSS **/
@@ -135,3 +142,5 @@ body {
     font-weight: bold;
     font-size: 18px;
 }
+
+
