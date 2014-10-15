@@ -62,7 +62,21 @@
 @section("output")
 
 			<div id="outputarea">
-				<p id="actualoutput"> TEST OUTPUT </p>
+
+				<p id="actualoutput">
+
+					<?php 	
+						$generator = new LoremIpsum();
+						$generator -> setSentenceStDev(1);
+						$generator -> setSentenceMean(7);
+						$generator -> setParagraphStDev(1);
+						$generator -> setParagraphMean(3);
+						$paragraphs = $generator->getParagraphs(Input::get("count"));
+						echo implode("<p id=\"actualoutput\">", $paragraphs);
+					?>
+
+				</p>
+
 			</div>
 
 @stop
