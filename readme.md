@@ -18,22 +18,21 @@ Here is a list of the new folders and files I created within my Laravel framewor
 
 #####Created folders:
 
-    *p3/app/php
+    * p3/app/php
 
-    *p3/public/css
-
-    *p3/public/images
+    * p3/public/css
+    * p3/public/images
 
 
 #####Created files (ex images):
 
-....*p3/app/php
+######*p3/app/php
 
-.........* fillertextlogic.php
+         * fillertextlogic.php
 
-.........* randomuserslogic.php
-
-.........* warningslogic.php
+         * randomuserslogic.php
+         
+         * warningslogic.php
 
 
 ....*p3/public/css
