@@ -49,6 +49,6 @@ Please note that the file list does not include the built-in Laravel framework f
 ##Outside code and source material
 Image sources:
 
-    * [Link to: A Google search found this Snoopy picture that inspired the BFF stickman.](http://shopfurrytales.blogspot.com/2011_03_01_archive.html)
+....* [Link to: A Google search found this Snoopy picture that inspired the BFF stickman.](http://shopfurrytales.blogspot.com/2011_03_01_archive.html)
 
-    * [Link to: Image that inspired the BFF doggie.](http://www.shutterstock.com/pic-94264543/stock-photo-sitting-dog-cartoon-raster-version.html)
+....* [Link to: Image that inspired the BFF doggie.](http://www.shutterstock.com/pic-94264543/stock-photo-sitting-dog-cartoon-raster-version.html)
