@@ -124,13 +124,14 @@ body {
 }
 
 #outputarea {
-	padding: 10px;
-	text-align: center;
+	padding-left: 60px;
+	padding-right: 60px;
 	word-wrap: normal;
+	display: block;
 }
 
 #actualoutput {
 	color: #a0001c;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
