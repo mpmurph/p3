@@ -26,17 +26,17 @@ Here is a list of the new folders and files I created within my Laravel framewor
 
 #####Created files (ex images):
 
-######*p3/app/php
+######* In folder: p3/app/php
          * fillertextlogic.php
          * randomuserslogic.php
          * warningslogic.php
 
 
-######*p3/public/css
+######* In folder: p3/public/css
          * stylesheet.css
 
 
-######*p3/public/app/views
+######* In folder: p3/public/app/views
          * _master.blade.php
          * _child.blade.php (extends _master)
          * welcome.blade.php (extends _master)
