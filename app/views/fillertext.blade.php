@@ -47,7 +47,7 @@
 			<br>
 			<br>
 
-			{{ Form::submit("SUBMIT", array("class" => "btn btn-success btn-lg")); }}
+			{{ Form::submit("SUBMIT", array("class" => "btn btn-success btn-lg", "name" => "submit")); }}
 
 			<br>
 			<br>
@@ -65,15 +65,7 @@
 
 				<p id="actualoutput">
 
-					<?php 	
-						$generator = new LoremIpsum();
-						$generator -> setSentenceStDev(1);
-						$generator -> setSentenceMean(7);
-						$generator -> setParagraphStDev(1);
-						$generator -> setParagraphMean(3);
-						$paragraphs = $generator->getParagraphs(Input::get("count"));
-						echo implode("<p id=\"actualoutput\">", $paragraphs);
-					?>
+					<?php require(app_path()."/php/fillertextlogic.php"); ?>
 
 				</p>
 
