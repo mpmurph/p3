@@ -24,7 +24,7 @@
 
 		{{ Form::open(array("url" => "fillertext", "method" => "GET")) }}
 
-			{{ Form::label("count", "How many paragraphs would you like returned?"); }}
+			{{ Form::label("count", "How many paragraphs would you like returned (1-1000)?"); }}
 			<br>
 			{{ Form::text("count", Input::get("count")); }}
 
