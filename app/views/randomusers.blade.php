@@ -24,7 +24,7 @@
 
 		{{ Form::open(array("url" => "randomusers", "method" => "GET")) }}
 
-			{{ Form::label("count", "How many users would you like returned?"); }}
+			{{ Form::label("count", "How many users would you like returned (1-1000)?"); }}
 			<br>
 			{{ Form::text("count", Input::get("count")); }}
 
@@ -47,7 +47,7 @@
 			<br>
 			<br>
 
-			{{ Form::submit("SUBMIT", array("class" => "btn btn-success btn-lg")); }}
+			{{ Form::submit("SUBMIT", array("class" => "btn btn-success btn-lg", "name" => "submit")); }}
 
 			<br>
 			<br>
@@ -62,7 +62,13 @@
 @section("output")
 
 			<div id="outputarea">
-				<p id="actualoutput"> TEST OUTPUT </p>
+
+				<p id="actualoutput">
+
+					<?php require(app_path()."/php/randomuserslogic.php"); ?>
+
+				</p>
+
 			</div>
 
 @stop
