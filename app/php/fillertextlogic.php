@@ -2,19 +2,9 @@
 	
 	if (Input::get("submit")) {
 
-		if (!preg_match ("/[\d]+/", Input::get("count"))) {
+		require(app_path()."/php/warningslogic.php");
 
-			echo "<p id=\"warning\">PLEASE ENTER A NUMBER!</p";
-
-		}
-
-		else if (Input::get("count") == "" && Input::get("paraglength")) {
-
-			echo "<p id=\"warning\">PLEASE ENTER A NUMBER!</p";
-
-		}
-
-		else {
+		if (Input::get("count") > 0 && Input::get("count") <=1000) {
 			$generator = new LoremIpsum();
 
 			if (Input::get("paraglength")=="short") {
