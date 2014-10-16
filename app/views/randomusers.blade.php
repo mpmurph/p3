@@ -42,7 +42,7 @@
 			<br>
 
 			{{ Form::checkbox("profile", "profile", Input::get("profile"), array("id"=>"profile")); }}
-			{{ Form::label("profile", "Include User Profiles"); }}
+			{{ Form::label("profile", "Include Lorem Ipsum User Profile"); }}
 
 			<br>
 			<br>
