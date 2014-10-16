@@ -18,26 +18,26 @@
 			for ($i=1; $i<=Input::get("count"); $i++) {
 
 				//generate a user name
-				echo "Name: ".$faker -> name, "<br>";
+				echo "<span id=\"userdatalabel\">Name: </span>".$faker -> name, "<br>";
 
 				//if the user has requested to include birthdays, generate a birthdate
 				if (Input::get("birthday")) {
 
-					echo "Birthday: ".$faker->dateTimeThisCentury->format('Y-m-d'), "<br>";
+					echo "<span id=\"userdatalabel\">Birthday: </span>".$faker->dateTimeThisCentury->format('Y-m-d'), "<br>";
 
 				}
 
 				//if the user has requested to include a zip code, generate a zip code
 				if (Input::get("zip")) {
 
-					echo "Zip Code: ".$faker -> postcode, "<br>";
+					echo "<span id=\"userdatalabel\">Zip Code: </span>".$faker -> postcode, "<br>";
 
 				}
 
 				//if the user has requested to include a profile, generate a lorem ipsum profile
 				if (Input::get("profile")) {
 
-					echo "Profile: ".$faker -> text ($maxNbChars = 200), "<br>";
+					echo "<span id=\"userdatalabel\">Profile: </span>".$faker -> text ($maxNbChars = 200), "<br>";
 
 				}
 
