@@ -50,10 +50,10 @@ Please note that the file list does not include the built-in Laravel framework f
 
 #####View hierarchy:
 
-master | -master.blade.php | -master.blade.php | -master.blade.php |
+master | *-master.blade.php* | *-master.blade.php* | *-master.blade.php* |
 --- | --- | --- | ---
-child | _child.blade.php | _child.blade.php | welcome.blade.php |
-grandchild | randomusers.blade.php | fillertext.blade.php | |
+**child** | _child.blade.php | _child.blade.php | welcome.blade.php |
+**grandchild** | randomusers.blade.php | fillertext.blade.php | |
 
 ##Outside code and source material
 #####Image sources:
