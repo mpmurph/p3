@@ -46,6 +46,15 @@ Here is a list of the new folders and files I created within my Laravel framewor
 
 Please note that the file list does not include the built-in Laravel framework files that I modified (e.g. .gitignore or app.php).
 
+---
+
+#####View hierarchy:
+
+| 1st level |                         -master.blade.php                        |
+| ----------------------------------------------------------------------------:|
+| 2nd level |                _child.blade.php              | welcome.blade.php |
+| 3rd level | randomusers.blade.php | fillertext.blade.php |                   |
+
 ##Outside code and source material
 #####Image sources:
 
