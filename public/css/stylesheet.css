@@ -62,9 +62,9 @@ td {
 }
 
 
-/** _master CSS **/
-/** _master CSS **/
-/** _master CSS **/
+/** _master.blade.php CSS **/
+/** _master.blade.php CSS **/
+/** _master.blade.php CSS **/
 
 body {
 	font-family: Tahoma, Geneva, sans-serif;
@@ -84,14 +84,14 @@ body {
 }
 
 
-/** welcome CSS **/
-/** welcome CSS **/
-/** welcome CSS **/
+/** welcome.blade.php CSS **/
+/** welcome.blade.php CSS **/
+/** welcome.blade.php CSS **/
 
 #sidebarimage {
 	float:left;
 	width: 31%;
-	/** width: 350px; 31%
+	/** width: 350px;
 	height: 1000px;**/
 }
 
@@ -109,18 +109,9 @@ body {
 }
 
 
-/** randomusers CSS **/
-/** randomusers CSS **/
-/** randomusers CSS **/
-
-
-
-
-
-
-/** fillertext CSS **/
-/** fillertext CSS **/
-/** fillertext CSS **/
+/** fillertext.blade.php and randomusers.blade.php CSS **/
+/** fillertext.blade.php and randomusers.blade.php CSS **/
+/** fillertext.blade.php and randomusers.blade.php CSS **/
 
 #fillerform {
 	font-size: 20px;
@@ -137,10 +128,10 @@ body {
 	display: block;
 }
 
+/** this ID is also used on fillertextlogic.php and randomuserslogic.php **/
 #actualoutput {
 	color: #a0001c;
     font-weight: bold;
     font-size: 18px;
 }
-
 
