@@ -15,6 +15,8 @@ I imported the recommended packages for this project:
     *badcow/lorem-ipsum
     *fzaninotto/faker
 
+---
+
 Here is a list of the new folders and files I created within my Laravel framework for this application:
 
 #####Created folders:
