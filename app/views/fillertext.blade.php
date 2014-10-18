@@ -31,17 +31,17 @@
 			<br>
 			<br>
 			
-			{{ Form::radio("paraglength", "short", Input::get("paraglength")=="short", array("id"=>"short")); }}
+			{{ Form::radio("paraglength", "short", Input::get("paraglength")=="short"); }}
 			{{ Form::label("short", "Short"); }}
 
 			<br>
 
-			{{ Form::radio("paraglength", "medium", Input::get("paraglength")=="medium", array("id"=>"medium")); }}
+			{{ Form::radio("paraglength", "medium", Input::get("paraglength")=="medium"); }}
 			{{ Form::label("medium", "Medium"); }} 
 
 			<br>
 
-			{{ Form::radio("paraglength", "long", Input::get("paraglength")=="long", array("id"=>"long")); }}
+			{{ Form::radio("paraglength", "long", Input::get("paraglength")=="long"); }}
 			{{ Form::label("long", "Long"); }}
 
 			<br>
@@ -63,11 +63,15 @@
 
 			<div id="outputarea">
 
-				<p id="actualoutput">
+				@if(isset($warnings))
+					<p id="warning">{{ $warnings }}</p>
+				@endif
 
-					<?php require(app_path()."/php/fillertextlogic.php"); ?>
-
-				</p>
+				@if(isset($paragraphs))
+					@foreach($paragraphs as $paragraph)
+						<p id="actualoutput">{{ $paragraph }}</P>
+					@endforeach
+				@endif
 
 			</div>
 
