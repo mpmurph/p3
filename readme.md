@@ -21,7 +21,7 @@ Here is a list of the new folders and files I created within my Laravel framewor
 
 #####Created folders:
 
-    * p3/app/php
+    * p3/app/classes
     * p3/public/css
     * p3/public/images
 
