@@ -33,10 +33,9 @@ Here is a list of the new folders and files I created within my Laravel framewor
          * Filler.php
          * User.php
 
-
-######* In folder: p3/public/css
-         * stylesheet.css
-
+######* In folder: p3/app/controllers
+         * FillerController.php
+         * UserController.php
 
 ######* In folder: p3/public/app/views
          * _master.blade.php
@@ -45,6 +44,8 @@ Here is a list of the new folders and files I created within my Laravel framewor
          * fillertext.blade.php (extends _child)
          * randomusers.blade.php (extends _child)
 
+######* In folder: p3/public/css
+         * stylesheet.css
 
 Please note that the file list does not include the built-in Laravel framework files that I modified (e.g. .gitignore or app.php).
 
