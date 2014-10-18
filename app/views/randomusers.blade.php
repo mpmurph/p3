@@ -31,17 +31,17 @@
 			<br>
 			<br>
 
-			{{ Form::checkbox("birthday", "birthday", Input::get("birthday"), array("id"=>"birthday")); }}
+			{{ Form::checkbox("birthday", "birthday", Input::get("birthday")); }}
 			{{ Form::label("birthday", "Include Birthdays"); }}
 
 			<br>
 
-			{{ Form::checkbox("zip", "zip", Input::get("zip"), array("id"=>"zip")); }}
+			{{ Form::checkbox("zip", "zip", Input::get("zip")); }}
 			{{ Form::label("zip", "Include Zip Codes"); }}
 
 			<br>
 
-			{{ Form::checkbox("profile", "profile", Input::get("profile"), array("id"=>"profile")); }}
+			{{ Form::checkbox("profile", "profile", Input::get("profile")); }}
 			{{ Form::label("profile", "Include Lorem Ipsum User Profile"); }}
 
 			<br>
@@ -65,7 +65,47 @@
 
 				<p id="actualoutput">
 
-					<?php require(app_path()."/php/randomuserslogic.php"); ?>
+					@if(isset($warnings))
+
+						<p id="warning">{{ $warnings }}</p>
+
+					@endif
+
+					@if(isset($names))
+
+						@for($i=0; $i<$count; $i++)
+
+							<span id="userdatalabel">Name: </span>{{ $names[$i] }}
+
+							<br>
+
+								@if(isset($birthdays))
+
+									<span id="userdatalabel">Birthday: </span>{{ $birthdays[$i] }}
+									<br>
+
+								@endif
+								
+								@if(isset($zips))
+
+									<span id="userdatalabel">Zip Code: </span>{{ $zips[$i] }}
+									<br>
+
+								@endif
+
+
+								@if(isset($profiles))
+
+									<span id="userdatalabel">Profile: </span>{{ $profiles[$i] }}
+									<br>
+
+								@endif
+
+							<br>
+						
+						@endfor
+
+					@endif
 
 				</p>
 
