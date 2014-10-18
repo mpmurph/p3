@@ -128,7 +128,6 @@ body {
 	display: block;
 }
 
-/** this ID is also used on fillertextlogic.php and randomuserslogic.php **/
 #actualoutput {
 	color: #a0001c;
     font-weight: bold;
@@ -136,9 +135,9 @@ body {
 }
 
 
-/** randomuserslogic.php CSS **/
-/** randomuserslogic.php CSS **/
-/** randomuserslogic.php CSS **/
+/** randomusers.blade.php CSS **/
+/** randomusers.blade.php CSS **/
+/** randomusers.blade.php CSS **/
 
 #userdatalabel {
 	color: #494047;
