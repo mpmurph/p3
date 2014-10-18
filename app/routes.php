@@ -40,7 +40,7 @@ Route::get('/fillertext', function()
 
 	$filler = new Filler();
 
-	$paragraphs = $filler->makeParagraphs(Input::get("paraglength"), Input::get("count"));
+	$paragraphs = $filler->makeParagraphs(Input::get("paraglength"), Input::get("count"), Input::get("wordlist"));
 
 	return View::make("fillertext")
 		->with("paragraphs", $paragraphs);

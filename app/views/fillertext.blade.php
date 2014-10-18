@@ -47,6 +47,17 @@
 			<br>
 			<br>
 
+			{{ Form::label("wordlist", "Which word list would you like to use?") }}
+			<br>
+			{{ Form::radio("wordlist", "loremipsum", Input::get("wordlist")=="loremipsum"); }}
+			{{ Form::label("loremipsum", "Lorem Ipsum"); }}
+			<br>
+			{{ Form::radio("wordlist", "bff", Input::get("wordlist")=="bff"); }}
+			{{ Form::label("bff", "BFF Words"); }}
+
+			<br>
+			<br>
+
 			{{ Form::submit("SUBMIT", array("class" => "btn btn-success btn-lg", "name" => "submit")); }}
 
 			<br>
