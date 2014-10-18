@@ -28,10 +28,10 @@ Here is a list of the new folders and files I created within my Laravel framewor
 
 #####Created files (ex images):
 
-######* In folder: p3/app/php
-         * fillertextlogic.php
-         * randomuserslogic.php
-         * warningslogic.php
+######* In folder: p3/app/classes
+         * Warnings.php
+         * Filler.php
+         * User.php
 
 
 ######* In folder: p3/public/css
