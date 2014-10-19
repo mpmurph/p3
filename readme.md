@@ -12,8 +12,8 @@ I will demonstrate my P3 in section on Friday.
 ##Details for teaching team
 I imported the recommended packages for this project: 
 
-    *badcow/lorem-ipsum
-    *fzaninotto/faker
+    * badcow/lorem-ipsum
+    * fzaninotto/faker
 
 ---
 
