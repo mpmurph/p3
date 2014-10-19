@@ -31,17 +31,17 @@
 			<br>
 			<br>
 			
-			{{ Form::radio("paraglength", "short", Input::get("paraglength")=="short"); }}
+			{{ Form::radio("paraglength", "short", Input::get("paraglength")=="short", array("id"=>"short")); }}
 			{{ Form::label("short", "Short"); }}
 
 			<br>
 
-			{{ Form::radio("paraglength", "medium", Input::get("paraglength")=="medium"); }}
+			{{ Form::radio("paraglength", "medium", Input::get("paraglength")=="medium", array("id"=>"medium")); }}
 			{{ Form::label("medium", "Medium"); }} 
 
 			<br>
 
-			{{ Form::radio("paraglength", "long", Input::get("paraglength")=="long"); }}
+			{{ Form::radio("paraglength", "long", Input::get("paraglength")=="long", array("id"=>"long")); }}
 			{{ Form::label("long", "Long"); }}
 
 			<br>
@@ -49,10 +49,10 @@
 
 			{{ Form::label("wordlist", "Which word list would you like to use?") }}
 			<br>
-			{{ Form::radio("wordlist", "loremipsum", Input::get("wordlist")=="loremipsum"); }}
+			{{ Form::radio("wordlist", "loremipsum", Input::get("wordlist")=="loremipsum", array("id"=>"loremipsum")); }}
 			{{ Form::label("loremipsum", "Lorem Ipsum"); }}
 			<br>
-			{{ Form::radio("wordlist", "bff", Input::get("wordlist")=="bff"); }}
+			{{ Form::radio("wordlist", "bff", Input::get("wordlist")=="bff", array("id"=>"bff")); }}
 			{{ Form::label("bff", "BFF Words"); }}
 
 			<br>
