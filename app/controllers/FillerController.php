@@ -36,7 +36,7 @@ class FillerController extends BaseController {
 		$paragraphs = $filler->makeParagraphs(Input::get("paraglength"), Input::get("count"), Input::get("wordlist"));
 
 		//call for the fillertext view, inserting the results of the 
-		//user's request
+		//user's request returned by the Filler method
 		return View::make("fillertext")
 			->with("paragraphs", $paragraphs);
 	}

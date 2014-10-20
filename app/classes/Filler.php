@@ -40,9 +40,9 @@ class Filler {
 
 		}
 
-		//if the user wants to use the BFF wordlist, definte that list
-		//and set it as the word list (the default is lorem ipsum)
-		//per the LoremIpsum class
+		//if the user wants to use the BFF wordlist, define that list
+		//and set it as the word list - otherwise, the default is the 
+		//lorem ipsum word list built into the LoremIpsum class
 		if ($wordlist =="bff") {
 
 			$bffwords = array (

@@ -43,7 +43,7 @@ class UserController extends BaseController {
 
 			}
 
-			//if the site user did not request birthdays, return an empty array
+			//if the site user did not request birthdays, set the variable with a null value
 			if(!Input::get("birthday")) {
 
 				$userbirthdays = NULL;
@@ -57,7 +57,7 @@ class UserController extends BaseController {
 
 			}
 
-			//if the site user did not request zip codes, return an empty array
+			//if the site user did not request zip codes, set the variable with a null value
 			if(!Input::get("zip")) {
 
 				$userzips = NULL;
@@ -71,15 +71,15 @@ class UserController extends BaseController {
 
 			}
 
-			//if the site user did not request profiles, return an empty array
+			//if the site user did not request profiles, set the variable with a null value
 			if(!Input::get("profile")) {
 
 				$userprofiles = NULL;
 
 			}
 
-		//call for the randomusers view, inserting the results of the 
-		//user's request
+		//call for the randomusers view, inserting the results returned per the 
+		//site user's preferences
 		return View::make("randomusers")
 			->with("count", $count)
 			->with("names", $usernames)

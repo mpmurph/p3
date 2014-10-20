@@ -24,7 +24,7 @@ class User {
 
 	}
 
-	//get an array of birthday - the array will have as many values as are
+	//get an array of birthdays - the array will have as many values as are
 	//requested via the $count variable
 	public function getBirthday($count) {
 
@@ -79,7 +79,7 @@ class User {
 		$userprofiles = array();
 
 		//for the number of profiles requested, cycle through the for
-		//loop and add a new profile to the $userprofiles array by calling
+		//loop and add a new "profile" to the $userprofiles array by calling
 		//the Faker 'text' method
 		for ($i=0; $i<$count; $i++) {
 			$userprofiles = array_add($userprofiles, $i, $faker -> text ($maxNbChars = 200));
