@@ -79,11 +79,11 @@
 				@endif
 
 				@if(isset($paragraphs))
-					<span id="actualoutput">				
+					<div id="actualoutput">				
 						@foreach($paragraphs as $paragraph)
 							<p>{{ $paragraph }}</P>
 						@endforeach
-					</span>
+					</div>
 				@endif
 
 			</div>
