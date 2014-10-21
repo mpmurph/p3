@@ -90,6 +90,6 @@
 
 	<br>
 
-	<h5 style="text-align:center">{{ link_to("/", "Return Home")." or ".link_to("/fillertext", "Generate Random Users") }}</h5>
+	<h5 style="text-align:center">{{ link_to("/", "Return Home")." or ".link_to("/randomusers", "Generate Random Users") }}</h5>
 
 @stop
