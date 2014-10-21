@@ -9,7 +9,6 @@
 	<meta name="keywords" content="lorem ipsum, random, text, generator, user, users, profile, profiles, pretend, copy">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<?php //require("logic.php"); ?>
 </head>
 
 <body>
