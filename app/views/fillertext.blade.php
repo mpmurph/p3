@@ -47,7 +47,7 @@
 			<br>
 			<br>
 
-			{{ Form::label("wordlist", "Which word list would you like to use?") }}
+			{{ Form::label("loremipsum", "Which word list would you like to use?") }}
 			<br>
 			{{ Form::radio("wordlist", "loremipsum", Input::get("wordlist")=="loremipsum", array("id"=>"loremipsum")); }}
 			{{ Form::label("loremipsum", "Lorem Ipsum"); }}
