@@ -12,7 +12,7 @@
 
 	<div class="directions">
 
-		<h1 align="center">Generate Filler Text</h1>
+		<h1>Generate Filler Text</h1>
 
 	</div>
 

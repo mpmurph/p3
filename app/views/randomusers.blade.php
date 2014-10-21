@@ -12,7 +12,7 @@
 
 	<div class="directions">
 
-		<h1 align="center">Generate Random Users</h1>
+		<h1>Generate Random Users</h1>
 
 	</div>
 
