@@ -61,54 +61,58 @@
 
 @section("output")
 
-			<div id="outputarea">
+	<div id="outputarea">
 
-				<p id="actualoutput">
+		<p id="actualoutput">
 
-					@if(isset($warnings))
+			@if(isset($warnings))
 
-						<p id="warning">{{ $warnings }}</p>
+				<p id="warning">{{ $warnings }}</p>
 
-					@endif
+			@endif
 
-					@if(isset($names))
+			@if(isset($names))
 
-						@for($i=0; $i<$count; $i++)
+				@for($i=0; $i<$count; $i++)
 
-							<span style="color:#494047">Name: </span>{{ $names[$i] }}
+					<span style="color:#494047">Name: </span>{{ $names[$i] }}
 
+					<br>
+
+						@if(isset($birthdays))
+
+							<span style="color:#494047">Birthday: </span>{{ $birthdays[$i] }}
 							<br>
 
-								@if(isset($birthdays))
-
-									<span style="color:#494047">Birthday: </span>{{ $birthdays[$i] }}
-									<br>
-
-								@endif
-								
-								@if(isset($zips))
-
-									<span style="color:#494047">Zip Code: </span>{{ $zips[$i] }}
-									<br>
-
-								@endif
-
-
-								@if(isset($profiles))
-
-									<span style="color:#494047">Profile: </span>{{ $profiles[$i] }}
-									<br>
-
-								@endif
-
-							<br>
+						@endif
 						
-						@endfor
+						@if(isset($zips))
 
-					@endif
+							<span style="color:#494047">Zip Code: </span>{{ $zips[$i] }}
+							<br>
 
-				</p>
+						@endif
 
-			</div>
+
+						@if(isset($profiles))
+
+							<span style="color:#494047">Profile: </span>{{ $profiles[$i] }}
+							<br>
+
+						@endif
+
+					<br>
+				
+				@endfor
+
+			@endif
+
+		</p>
+
+	</div>
+
+	<br>
+
+	<h5 style="text-align:center">{{ link_to("/", "Return Home")." or ".link_to("/fillertext", "Generate Filler Text") }}</h5>
 
 @stop

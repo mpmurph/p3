@@ -72,20 +72,24 @@
 
 @section("output")
 
-			<div id="outputarea">
+	<div id="outputarea">
 
-				@if(isset($warnings))
-					<p id="warning">{{ $warnings }}</p>
-				@endif
+		@if(isset($warnings))
+			<p id="warning">{{ $warnings }}</p>
+		@endif
 
-				@if(isset($paragraphs))
-					<div id="actualoutput">				
-						@foreach($paragraphs as $paragraph)
-							<p>{{ $paragraph }}</P>
-						@endforeach
-					</div>
-				@endif
-
+		@if(isset($paragraphs))
+			<div id="actualoutput">				
+				@foreach($paragraphs as $paragraph)
+					<p>{{ $paragraph }}</P>
+				@endforeach
 			</div>
+		@endif
+
+	</div>
+
+	<br>
+
+	<h5 style="text-align:center">{{ link_to("/", "Return Home")." or ".link_to("/fillertext", "Generate Filler Text") }}</h5>
 
 @stop
