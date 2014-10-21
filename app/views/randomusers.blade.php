@@ -63,7 +63,7 @@
 
 	<div id="outputarea">
 
-		<p id="actualoutput">
+		<div id="actualoutput">
 
 			@if(isset($warnings))
 
@@ -107,7 +107,7 @@
 
 			@endif
 
-		</p>
+		</div>
 
 	</div>
 
