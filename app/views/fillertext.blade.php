@@ -12,7 +12,7 @@
 
 	<div class="directions">
 
-		<h1>Generate Filler Text</h1>
+		<h1 style="text-align:center">Generate Filler Text</h1>
 
 	</div>
 
@@ -79,9 +79,11 @@
 				@endif
 
 				@if(isset($paragraphs))
-					@foreach($paragraphs as $paragraph)
-						<p id="actualoutput">{{ $paragraph }}</P>
-					@endforeach
+					<span id="actualoutput">				
+						@foreach($paragraphs as $paragraph)
+							<p>{{ $paragraph }}</P>
+						@endforeach
+					</span>
 				@endif
 
 			</div>

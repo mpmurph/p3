@@ -12,7 +12,7 @@
 
 	<div class="directions">
 
-		<h1>Generate Random Users</h1>
+		<h1 style="text-align:center">Generate Random Users</h1>
 
 	</div>
 
@@ -75,20 +75,20 @@
 
 						@for($i=0; $i<$count; $i++)
 
-							<span id="userdatalabel">Name: </span>{{ $names[$i] }}
+							<span color="#494047">Name: </span>{{ $names[$i] }}
 
 							<br>
 
 								@if(isset($birthdays))
 
-									<span id="userdatalabel">Birthday: </span>{{ $birthdays[$i] }}
+									<span color="#494047">Birthday: </span>{{ $birthdays[$i] }}
 									<br>
 
 								@endif
 								
 								@if(isset($zips))
 
-									<span id="userdatalabel">Zip Code: </span>{{ $zips[$i] }}
+									<span color="#494047">Zip Code: </span>{{ $zips[$i] }}
 									<br>
 
 								@endif
@@ -96,7 +96,7 @@
 
 								@if(isset($profiles))
 
-									<span id="userdatalabel">Profile: </span>{{ $profiles[$i] }}
+									<span color="#494047">Profile: </span>{{ $profiles[$i] }}
 									<br>
 
 								@endif
