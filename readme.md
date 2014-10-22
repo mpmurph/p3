@@ -44,6 +44,7 @@ Here is a list of the new folders and files I created within my Laravel framewor
          * _master.blade.php
          * _child.blade.php (extends _master)
          * welcome.blade.php (extends _master)
+         * error.blade.php (extends _master)
          * fillertext.blade.php (extends _child)
          * randomusers.blade.php (extends _child)
 
@@ -56,10 +57,10 @@ Note that this file list does not include the built-in Laravel framework files t
 
 #####View hierarchy:
 
-master | *-master.blade.php* | *-master.blade.php* | *-master.blade.php* |
---- | --- | --- | ---
-**child** | _child.blade.php | _child.blade.php | welcome.blade.php |
-**grandchild** | randomusers.blade.php | fillertext.blade.php | |
+master | *-master.blade.php* | *-master.blade.php* | *-master.blade.php* | *-master.blade.php* |
+--- | --- | --- | --- | ---
+**child** | _child.blade.php | _child.blade.php | welcome.blade.php | error.blade.php |
+**grandchild** | randomusers.blade.php | fillertext.blade.php | | |
 
 ##Outside code and source material
 
