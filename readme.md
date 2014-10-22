@@ -57,7 +57,7 @@ Note that this file list does not include the built-in Laravel framework files t
 
 #####View hierarchy:
 
-master | *-master.blade.php* | *-master.blade.php* | *-master.blade.php* | *-master.blade.php* |
+master | *_master.blade.php* | *_master.blade.php* | *_master.blade.php* | *_master.blade.php* |
 --- | --- | --- | --- | ---
 **child** | _child.blade.php | _child.blade.php | welcome.blade.php | error.blade.php |
 **grandchild** | randomusers.blade.php | fillertext.blade.php | | |
