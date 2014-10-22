@@ -12,7 +12,7 @@
 
 	<div>
 
-		<h1 style="text-align:center">Ruff! Ruff! This is the wrong page!</h1>
+		<h1 style="text-align:center">Woof! Woof! This is the wrong page!</h1>
 
 		<h3 style="text-align:center">Please click <a href="/">here</a> to return to your BFF!</h3>
 
