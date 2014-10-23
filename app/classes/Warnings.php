@@ -6,7 +6,7 @@ class Warnings {
 
 		//make sure that the user has entered a number in the text field.
 		//if not, return a warning
-		if (!preg_match ("/[\d]+/", $count)) {
+		if (preg_match ("/[\D]+/", $count)) {
 
 			return "PLEASE ENTER A NUMBER!";
 
